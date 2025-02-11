@@ -1,0 +1,7 @@
+# Appendix {.unnumbered}
+
+If you have an appendix, it would go here.
+
+If you **don't** have an appendix, you'll need to edit `_quarto.yml` to delete 
+the line referencing this file (currently line 23). You can leave this file 
+as-is or delete it. Up to you.

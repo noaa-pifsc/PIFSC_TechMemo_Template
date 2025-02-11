@@ -1,0 +1,33 @@
+project: 
+  type: book
+
+book: 
+  page-navigation: true
+  title: "PIFSC Tech Memo Template" 
+  author:
+    - name: Phoebe Woodworth-Jefcoats
+      affiliations:
+        - name: NOAA Fisheries
+          department: Pacific Islands Fisheries Science Center
+    - name: Revere Wood
+      affiliations:
+        - name: NOAA Fisheries
+          department: Pacific Islands Fisheries Science Center
+  chapters:
+    - index.qmd
+    - ExecutiveSummary.qmd
+    - MainBodyText.qmd
+    - Acknowledgements.qmd
+    - LiteratureCited.qmd
+    - References.qmd
+    - Appendix.qmd
+    
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  docx:
+    toc: true
+    toc-depth: 4
+    reference-doc: OFFICIAL_PIFSC_Tech_Memo_Template_July_2024.docx
+    always_allow_html: true

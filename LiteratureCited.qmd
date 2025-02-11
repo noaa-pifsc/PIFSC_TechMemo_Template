@@ -1,0 +1,53 @@
+# Literature Cited {.unnumbered}
+
+```{r}
+#| echo: false
+
+# Two options for incorporating your references are included here.  
+# CHOOSE ONE
+# Regardless of which option you choose, you'll need to edit _quarto.yml to 
+# reflect your choice
+
+
+# Add in some text here about linking EndNote with Zotero.
+
+# OPTION ONE: BibTeX
+# You can add BibTeX entries to references.bib.  
+# https://www.doi2bib.org/ can generate these for you.  
+# And check out https://libguides.nps.edu/citation/bibtex for help creating 
+# citations for things like government reports.
+# You can also use EndNote with Zotero to generate a BibTex file.  If you're 
+# savvy at doing this, please let me know, open an issue, or submit a pull 
+# request updating this text with instructions. 
+# Some benefits of using BibTex references are that they enable easy in-text
+# citation, your references will only appear if you actually cite them, and
+# your references will be properly formatted.
+# IF YOU USE THIS OPTION, delete the line of code in _quarto.yml that adds
+# LiteratureCited.qmd to the document.  You can leave the LiteratureCited.qmd 
+# file itself as-is.
+# ALSO
+# In Word, you'll need to apply the "Literature" style to your references.
+
+# OPTION TWO: References by hand
+# Or, if you prefer to enter citations by hand, be sure you're using APA 7th edition.
+# Enter them on the lines between the Div (:::)
+# End each citation with two spaces
+# Leave a blank line between citations so that the formatting is applied correctly.
+# Note that you'll still need to italicize journal names and volumes yourself.
+# You can do this by placing the text within pair of single asterisks or underscores.
+# Some benefits of doing references by hand are that it may work better for obscure
+# references and that you'll get a cozy feeling of nostalgia.
+# IF YOU USE THIS OPTION, delete the line of code in _quaro.yml that adds 
+# References.qmd to the document.  You can leave the References.qmd file itself
+# as-is.
+```
+
+::: {custom-style="Literature"}
+Soto, C. J., & John, O. P. (2017). The next big five inventory (BFI-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power. *Journal of Personality and Social Psychology, 113*(1), 117-143. <http://dx.doi.org/10.1037/pspp0000096>
+
+Nguyen, T., Carnevale, J. J., Scholer, A. A., Miele, D. B., & Fujita, K. (2019). Metamotivational knowledge of the role of high-level and low-level construal in goal-relevant task performance. _Journal of Personality and Social Psychology, 117_(5), 879-899. <http://dx.doi.org/10.1037/pspa0000166>
+
+Pegion, K., Kirtman, B. P., Becker, E., Collins, D. C., LaJoie, E., Burgman, R., Bell, R., DelSole, R., Min, D., Zhu, Y., Li, W., Sinsky, E., Guan, H., Gottschalck, J., Metzger, E. J., Barton, N. P., Achuthavarier, D., Marshak, J., Koster, R., . . . Kim, H. (2019). The subseasonal experiment (SubX): A multimodel subseasonal prediction experiment. *Bulletin of the American Meteorological Society, 100*(10), 2043-2061. <https://doi.org/10.1175/BAMS-D-18-0270.1>
+
+Bureau of International Organization Affairs. (2018). _U.S. contributions to international organizations, 2017_ \[Annual report\]. U.S. Department of State. <https://www.state.gov/u-s-contributions-to-international-organizations/>
+:::

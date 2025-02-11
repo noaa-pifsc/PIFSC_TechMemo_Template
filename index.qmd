@@ -1,0 +1,153 @@
+# Delete this page in Word {.unnumbered}
+Along with the page before it that the template generates.
+
+Before that, though, follow these instructions:  
+- At the top of the Table of Contents, select Insert > Break > "Section Break
+(continuous)"   
+
+- At the top of the first section after your Executive Summary, do the same
+thing: Insert > Break > "Section Break (continuous)"  
+
+- From your Table of Contents page, select Insert > Page Numbers.  Select 
+"Alignment" to be "Right".  Then, click on "Format" and select lower-case Roman 
+numerals.  
+
+- On an odd-numbered page, click in the footer area and insert the following 
+footer:  
+\
+U.S. Department of Commerce | National Oceanic and Atmospheric Administration  
+\
+- On an even-numbered page, insert the following footer:  
+\
+National Marine Fisheries Service | Pacific Islands Fisheries Science Center  
+\
+
+Then, follow the instructions on the following pages:  
+- Table of Contents  
+- List of Tables  
+- List of Figures
+
+```{r}
+#| echo: false
+# This file generates the Tech Memo's front matter.
+
+# Quarto requires this file to exist with this name because it's used if you
+# render your book to HTML.  Otherwise, I'd rename it to frontmatter.qmd.
+```
+
+{{< pagebreak >}}
+
+```{r}
+#| echo: false
+
+TechMemoTitle <- c("Replace this green text with the title in sentence case")
+
+# In the text blocks below:
+
+# Add your authors (simply replace Authors 1, 2, and 3)
+
+# Add/delete affiliations as needed, following the format provided
+# To get text to begin on a new line when rendered, make sure the previous line ends with two spaces.
+
+# The editor or librarian will add the data report and date details.
+```
+
+::: {custom-style="Title"}
+`r TechMemoTitle`
+:::
+
+Author One^1^, Author Two^1^, Author Three^2^
+
+^1^ Pacific Islands Fisheries Science Center\
+National Marine Fisheries Service\
+1845 Wasp Boulevard\
+Honolulu, HI 96818
+
+^2^ Other affiliation\
+Parent organization\
+12345 Name Street\
+City, ST 12345
+
+\
+
+::: {custom-style="Green highlight"}
+NOAA Technical Memorandum NMFS-PIFSC-###    
+
+\[Month\] \[Year\]
+:::
+
+\
+![](900px-Seal_of_the_US_DoC.png){fig-alt="U.S. Department of Commerce seal." width="1.3in"}  
+\
+U.S. Department of Commerce\
+Jeremy Pelter, Acting Secretary of Commerce
+
+National Oceanic and Atmospheric Administration\
+Vice Admiral Nancy Hann, Deputy Under Secretary for Operations Performing the 
+Duties of Under Secretary of Commerce for Oceans and Atmosphere and NOAA 
+Administrator
+
+National Marine Fisheries Service\
+Emily Menashes, Acting Assistant Administrator for Fisheries
+
+{{< pagebreak >}}
+
+```{r}
+#| echo: false
+# This code chunk create some strings that will fill document front matter.
+CoverPhotoDesc <- c("Replace this green text with a brief description of the cover photo")
+
+CoverPhotographer <- c("Either note the cover photo photograper here or delete this entire line of code")
+# Note: if you delete the above line about the CoverPhotographer, you should also delete reference
+# to it in the cover photo credit a few lines down from here.
+
+TechMemoAuthors <- c("Replace this green text with the authors using the format of Doe J.S., Smith C.R.")
+```
+
+**About this report**  
+
+The Pacific Islands Fisheries Science Center (PIFSC) of NOAA Fisheries uses the 
+NOAA Technical Memorandum NMFS-PIFSC series to distribute scientific and 
+technical information that has been scientifically reviewed and edited. Documents 
+within this series reflect sound professional work and may be referenced in the 
+formal scientific and technical literature.  
+
+
+Cover photo: \[`r CoverPhotoDesc`\]. Photo Credit: NOAA Fisheries. Photographer: `r CoverPhotographer`.  
+
+
+Edited by \[First name\]\[Last name\]
+
+
+**Recommended citation**
+
+`r TechMemoAuthors` (Year). `r TechMemoTitle`. Department of Commerce. NOAA Technical Memorandum. NMFS-PIFSC-##. doi:10…
+
+**Copies of this report are available from**
+
+Pacific Islands Fisheries Science Center\
+National Marine Fisheries Service\
+National Oceanic and Atmospheric Administration\
+1845 Wasp Boulevard, Building #176\
+Honolulu, Hawaiʻi 96818
+
+**Or online at**
+
+<https://repository.library.noaa.gov/>
+
+{{< pagebreak >}}
+
+# Table of Contents
+**Delete this text.** To add the table of contents, add a line below the following paragraph, select Insert > Index and Tables… and select “Table of Contents”.  Unselect “Use hyperlinks instead of page numbers.”  Click “Okay”.  
+
+To auto-generate the table of contents, highlight the table of contents and click “Update Table” in the top-left corner. If you want Headings 3 visible in the ToC, or if you don’t want Headings 2 visible: go to References > Table of Contents > look at the bottom of the drop-down menu and click “Custom Table of Contents” > keep everything the same except increase or decrease “levels”; to show more headings: show three levels; to show less headings: show two levels > click “Yes” on the pop-up asking to replace TOC. Make sure the new TOC have the dotted lines.
+
+# List of Tables
+**Delete this text.** To update the pre-inserted List of Tables (note: since there are no properly formatted figures present in the document, the list shows up as “No table of figures entries found”): highlight the table > go to References > Captions > click “Update Table” > click “update entire table”.  
+
+If you need to auto-generate a new List of Tables: go to the References tab > Captions > insert Table of Figures > check “Caption Label” is set to “Figures” in the pop-up menu > press “OK”. Do this process after figures have been inserted into document. If your captions are not auto-generating, ensure you have followed proper steps for inserting captions found on pages b and c.
+
+# List of Figures
+**Delete this text.** To update the pre-inserted List of Figures (note: since there are no properly formatted figures present in the document, the list shows up as “No table of figures entries found”): highlight the table > go to References > Captions > click “Update Table” > click “update entire table”.  
+
+If you need to auto-generate a new List of Figures: go to the References tab > Captions > insert Table of Figures > check “Caption Label” is set to “Figures” in the pop-up menu > press “OK”. Do this process after figures have been inserted into document. If your captions are not auto-generating, ensure you have followed proper steps for inserting captions found on pages b and c.

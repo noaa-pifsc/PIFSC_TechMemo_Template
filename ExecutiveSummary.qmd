@@ -1,0 +1,6 @@
+# Executive Summary {.unnumbered}
+
+Write your Executive Summary here.  What makes for a good Executive Summary?  I'm
+honestly not sure, but I figure it's the most important points of your report,
+on a single page, and written so that it sticks in the mind of someone who's 
+very busy and not necessarily interested in the document.  Easier said than done.

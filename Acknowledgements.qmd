@@ -1,0 +1,10 @@
+# Acknowledgements {.unnumbered}
+
+Acknowledgments here. For example, this template is possible in part through
+NMFS Open Science, an encouraging, supportive, and ambitious group of people
+working to remove barriers in our scientific workflows.  This effort was further 
+made possible by PIFSC's technical editor Revere Wood.
+
+This template makes generous use of existing open resources, which are recognized
+throughout the template as they're used.  If any are pivotal to the creation of 
+your data report, please recognize them appropriately. 
