@@ -1,5 +1,5 @@
-*This template is under construction and not quite ready for use.  If you'd like
-me to let you know when it's ready for testing, please let me know 
+*This template is under development and ready for people to test it out. 
+Exciting! If you'd like help test it, please let me know 
 (phoebe.woodworth-jefcoats@noaa.gov).*
 
 # PIFSC Tech Memo Template
