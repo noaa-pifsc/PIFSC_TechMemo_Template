@@ -106,11 +106,12 @@ TechMemoAuthors <- c("Replace this green text with the authors using the format 
 
 **About this report**  
 
-The Pacific Islands Fisheries Science Center (PIFSC) of NOAA Fisheries uses the 
-NOAA Technical Memorandum NMFS-PIFSC series to distribute scientific and 
-technical information that has been scientifically reviewed and edited. Documents 
-within this series reflect sound professional work and may be referenced in the 
-formal scientific and technical literature.  
+The Pacific Islands Fisheries Science Center (PIFSC) of NOAA’s National Marine 
+Fisheries Services uses the NOAA Technical Memorandum NMFS-PIFSC series to issue 
+scientific and technical publications that have received thorough internal 
+scientific review and editing. Reviews are transparent collegial reviews, not 
+anonymous peer reviews. Documents within this series reflect sound professional 
+work and may be referenced in the formal scientific and technical literature.  
 
 
 Cover photo: \[`r CoverPhotoDesc`\]. Photo Credit: NOAA Fisheries. Photographer: `r CoverPhotographer`.  

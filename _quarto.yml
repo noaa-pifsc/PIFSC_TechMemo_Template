@@ -29,5 +29,5 @@ format:
   docx:
     toc: true
     toc-depth: 4
-    reference-doc: OFFICIAL_PIFSC_Tech_Memo_Template_July_2024.docx
+    reference-doc: OFFICIAL_PIFSC_Tech_Memo_Template_Feb_2025.docx
     always_allow_html: true
