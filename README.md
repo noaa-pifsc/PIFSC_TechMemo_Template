@@ -69,12 +69,12 @@ memo. The rendered memo will be in a folder named `_book`. Quarto will create
 this in your R project the first time you render the book, and subsequent 
 renderings will overwrite the existing version.
 
-When you open the document in Word, you'll be confronted with two
+When you open the document in Word, you'll be confronted with one or two
 dialogue boxes:  
 The first asks if you want to update fields in the document.  Click "Yes".  
 ![](ExampleContent/UpdateFields.png)
 \
-The second asks how you want to update the Table of Contents.  Select "Update 
+A second may ask how you want to update the Table of Contents.  Select "Update 
 entire table" and click "OK".  I'm not sure it really matters which you select, 
 though.  
 ![](ExampleContent/UpdateTOC.png)
