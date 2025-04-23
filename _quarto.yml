@@ -17,7 +17,6 @@ book:
     - index.qmd
     - ExecutiveSummary.qmd
     - MainBodyText.qmd
-    - Acknowledgements.qmd
     - LiteratureCited.qmd
     - References.qmd
     - Appendix.qmd

@@ -80,15 +80,9 @@ NOAA Technical Memorandum NMFS-PIFSC-###
 ![](900px-Seal_of_the_US_DoC.png){fig-alt="U.S. Department of Commerce seal." width="1.3in"}  
 \
 U.S. Department of Commerce\
-Jeremy Pelter, Acting Secretary of Commerce
-
 National Oceanic and Atmospheric Administration\
-Vice Admiral Nancy Hann, Deputy Under Secretary for Operations Performing the 
-Duties of Under Secretary of Commerce for Oceans and Atmosphere and NOAA 
-Administrator
-
 National Marine Fisheries Service\
-Emily Menashes, Acting Assistant Administrator for Fisheries
+Pacific Islands Fisheries Science Center
 
 {{< pagebreak >}}
 
@@ -104,15 +98,19 @@ CoverPhotographer <- c("Either note the cover photo photograper here or delete t
 TechMemoAuthors <- c("Replace this green text with the authors using the format of Doe J.S., Smith C.R.")
 ```
 
-**About this report**  
+**Acknowledgements**  
 
-The Pacific Islands Fisheries Science Center (PIFSC) of NOAA’s National Marine 
-Fisheries Services uses the NOAA Technical Memorandum NMFS-PIFSC series to issue 
-scientific and technical publications that have received thorough internal 
-scientific review and editing. Reviews are transparent collegial reviews, not 
-anonymous peer reviews. Documents within this series reflect sound professional 
-work and may be referenced in the formal scientific and technical literature.  
+Acknowledgments here. For example, this template is possible in part through
+NMFS Open Science, an encouraging, supportive, and ambitious group of people
+working to remove barriers in our scientific workflows.  This effort was further 
+made possible by PIFSC's technical editor Revere Wood.  This template makes 
+generous use of existing open resources, which are recognized throughout the 
+template as they're used.  If any are pivotal to the creation of your admin 
+report, please recognize them appropriately.   
 
+Mention throughout this document to trade names or commercial companies is for 
+identification purposes only and does not imply endorsement by the National 
+Marine Fisheries Service, NOAA.  
 
 Cover photo: \[`r CoverPhotoDesc`\]. Photo Credit: NOAA Fisheries. Photographer: `r CoverPhotographer`.  
 
