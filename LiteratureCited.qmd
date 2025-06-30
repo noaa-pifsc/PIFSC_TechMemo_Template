@@ -8,17 +8,23 @@
 # Regardless of which option you choose, you'll need to edit _quarto.yml to 
 # reflect your choice
 
-
-# Add in some text here about linking EndNote with Zotero.
+# If you use Zotero, you can integrate it directly into RStudio.  This makes it
+# much easier to use OPTION ONE below.
+# To learn how to connect EndNote or Mendeley to Zotero, and 
+# to learn how to connect Zotero to RStudio, see:
+# https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-6.html
+# and 
+# https://drive.google.com/file/d/1_uZO7zA_tnqdf7jo8tZ2poa5ALidTHEN/view
 
 # OPTION ONE: BibTeX
 # You can add BibTeX entries to references.bib.  
-# https://www.doi2bib.org/ can generate these for you.  
+# If you have connected your Zotero library to RStudio, you can cite papers
+# using @ (see the "Citations and references" section in the file 
+# "MainBodyText.qmd" for an example of how to do this).
+# Otherwise, https://www.doi2bib.org/ can generate these for you.  
 # And check out https://libguides.nps.edu/citation/bibtex for help creating 
 # citations for things like government reports.
-# You can also use EndNote with Zotero to generate a BibTex file.  If you're 
-# savvy at doing this, please let me know, open an issue, or submit a pull 
-# request updating this text with instructions. 
+# You can also use citation software like Papers to generate a BibTex file.  
 # Some benefits of using BibTex references are that they enable easy in-text
 # citation, your references will only appear if you actually cite them, and
 # your references will be properly formatted.
@@ -29,7 +35,7 @@
 # In Word, you'll need to apply the "Literature" style to your references.
 
 # OPTION TWO: References by hand
-# Or, if you prefer to enter citations by hand, be sure you're using APA 7th edition.
+# If you prefer to enter citations by hand, be sure you're using APA 7th edition.
 # Enter them on the lines between the Div (:::)
 # End each citation with two spaces
 # Leave a blank line between citations so that the formatting is applied correctly.
