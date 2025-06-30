@@ -102,11 +102,12 @@ TechMemoAuthors <- c("Replace this green text with the authors using the format 
 
 Acknowledgments here. For example, this template is possible in part through
 NMFS Open Science, an encouraging, supportive, and ambitious group of people
-working to remove barriers in our scientific workflows.  This effort was further 
-made possible by PIFSC's technical editor Revere Wood.  This template makes 
-generous use of existing open resources, which are recognized throughout the 
-template as they're used.  If any are pivotal to the creation of your admin 
-report, please recognize them appropriately.   
+working to remove barriers in our scientific workflows.  Thanks to Marylou 
+Staman sharing workflows, code, and resources that improved this template.  This 
+effort was further made possible by PIFSC's technical editor Revere Wood.  This 
+template makes generous use of existing open resources, which are recognized 
+throughout the template as they're used.  If any are pivotal to the creation of 
+your admin report, please recognize them appropriately.   
 
 Mention throughout this document to trade names or commercial companies is for 
 identification purposes only and does not imply endorsement by the National 
