@@ -28,7 +28,17 @@ repository URL.  You can learn more about this in Jenny
 Bryan's [guide](https://happygitwithr.com/existing-github-first) to creating an
 R project from a GitHub repo.  
 
-That's it.  You are good to go!
+That's it.  You are good to go!  
+
+If you use GitHub Desktop, you can also follow these steps:  
+
+* Click the green button drop down “Code”, and select “Open with GitHub Desktop”  
+* On the popup, click “Clone”. GitHub Desktop should open.  
+* Open RStudio. Go to File > New project > Existing Directory  
+* “Browse” your computer files to find the folder “[REPO NAME]”, it should be in a GitHub folder. Click create project.   
+
+You're ready to start using the template.
+
 
 *One exception to these instructions is if you'd like to contribute to this 
 template.  Then, you should fork the repo so that you can submit pull requests.
