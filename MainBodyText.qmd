@@ -227,6 +227,48 @@ In the code that creates @tbl-GWP the colons (:) in the line under the header
 denote column alignment.  Although this seems not to be working...  Something to
 fix.
 
+### Equations
+Need to display equations that you've used?  You can do that!  There are a few
+examples below to get you started.  You can also find a handy resource for 
+coding equations here: <https://www.overleaf.com/learn>.  Follow the links under 
+the "Mathematics" heading on the left-hand side.
+
+One thing to note: you'll need to number equations manually in Word after you render
+the Tech Memo.  Numbering them in the code that creates the equation causes the
+number to be included in Word's Equation Editor, which causes problems for 508
+compliance. 
+
+Simple, centered equation:  
+$$
+\begin{align}
+s = T(T_{max} - T)(T - T_{min})
+\end{align}
+$$
+More formatting in this example: 
+$$
+\begin{align}
+r = e^{25.22-\frac{E}{kT}}
+\end{align}
+$$
+Partial differential equations:
+$$
+\begin{align}
+\frac{\partial N_{C}}{\partial t} = -\frac{\partial }{\partial m}(GN_{C}) - DN_{C}
+\end{align}
+$$
+Integral with limits: 
+$$
+\begin{align}
+0.5N = \int_{x_{min}}^{x_{med}} (bx + a)\,dx
+\end{align}
+$$
+Fraction, overbars, subsrcipts: 
+$$
+\begin{align}
+b = \frac{N_{sm} - N_{lg}}{\bar{x}_{sm} - \bar{x}_{lg}}
+\end{align}
+$$
+
 ## Citations and references
 PIFSC Tech Memos use APA 7th edition formatting for references and citations.  
 Here's an example of citing @Nguyen2019 and Nguyen et al. (2019) in text 
