@@ -227,6 +227,65 @@ In the code that creates @tbl-GWP the colons (:) in the line under the header
 denote column alignment.  Although this seems not to be working...  Something to
 fix.
 
+#### Landscape orientation for wide tables
+If you have a very wide table, you can use landscape orientation to display it 
+more cleanly.  Simply enclose your table in fences (:::) designating the page
+orientation.  There's an example below.
+
+::: {.landscape}
+
+Check out how wide @tbl-WIDE is.  Thanks to PIFSC's [OceanWatch](https://oceanwatch.pifsc.noaa.gov/)
+for supplying the data!
+
+```{r}
+#| echo: false
+#| message: false
+#| label: tbl-WIDE
+#| tbl-cap: 2024 monthly ESA OC CCI chlorophyll data 
+
+# Load the data from OceanWatch
+# You can go to https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0.html
+# to select other parameters.
+# At that site, I selected a single year of monthly data at a single location 
+# that happens to be that of Station ALOHA (but this is satellite data)
+# and copied the text in the box next to the 'Just generate the URL:' button
+chl_dat <- read_csv("https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0.csvp?chlor_a%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,MERIS_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,MODISA_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,OLCI_A_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,OLCI_B_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,SeaWiFS_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,VIIRS_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,chlor_a_log10_bias%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,chlor_a_log10_rmsd%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D,total_nobs_sum%5B(2024-01-01T00:00:00Z):1:(2024-12-01T00:00:00Z)%5D%5B(22.75):1:(22.75)%5D%5B(202):1:(202)%5D")
+
+# Wrangling the data so that we just see the month
+# and to lop off some significant figures
+# and rename the columns
+chl_tidy <- chl_dat |>
+  mutate(Month = month(`time (UTC)`)) |>
+  mutate(
+    `latitude (degrees_north)` = signif(`latitude (degrees_north)`, digits = 4),
+    `longitude (degrees_east)` = signif(`longitude (degrees_east)`, digits = 5),
+    `chlor_a (mg m-3)` = signif(`chlor_a (mg m-3)`, digits = 3),
+    `OLCI_A_nobs_sum` = round(`OLCI_A_nobs_sum`, digits = 0),
+    `OLCI_B_nobs_sum` = round(`OLCI_B_nobs_sum`, digits = 0),
+    `chlor_a_log10_bias` = signif(`chlor_a_log10_bias`, digits = 3),
+    `chlor_a_log10_rmsd` = signif(`chlor_a_log10_rmsd`, digits = 3),
+    `total_nobs_sum` = round(`total_nobs_sum`, digits = 0),
+    `time (UTC)` = NULL, # omitting this column since we have Month
+  ) |>
+  select(Month, everything()) |> # reordering so Month is first
+  rename(
+    `Lat (°N)` = `latitude (degrees_north)`,
+    `Lon (°E)` = `longitude (degrees_east)`
+  )
+
+# Plus drop the columns were all values are NaNs
+chl_tidy <- chl_tidy |>
+  select(where(~ !all(is.na(.))))
+
+# Make the table, including:
+# aligning the text in keeping with the PIFSC template
+
+kable(chl_tidy,
+      align = "rr")
+```
+
+:::
+
 ### Equations
 Need to display equations that you've used?  You can do that!  There are a few
 examples below to get you started.  You can also find a handy resource for 
