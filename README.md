@@ -1,7 +1,3 @@
-*This template is under development and ready for people to test it out. 
-Exciting! If you'd like help test it, please let me know 
-(phoebe.woodworth-jefcoats@noaa.gov).*
-
 # PIFSC Tech Memo Template
 This repository is designed to allow you to prepare a PIFSC Tech Memo
 in R. It does this by rendering the report as a Quarto book. The
