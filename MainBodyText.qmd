@@ -29,7 +29,8 @@ folder of this repository.
 
 ### Imported images
 
-Here are two examples of how to import a figure with cross referencing.\
+Here are two examples of how to import a figure with cross referencing. The
+first example uses Markdown to call the file.  The second example uses R. \
 You can see more at:
 <https://quarto.org/docs/authoring/cross-references.html>
 
@@ -57,12 +58,12 @@ you'll need to add figure captions and alt text in Word. You could
 include the text for these in this document to allow you to cut and
 paste them in if you want. Just an idea.
 
-Oh, and you can delete the placeholder captions that Quarto generates.
+Oh, and in Word, you can delete the placeholder captions that Quarto generates.
 That appears to be easier than turning them into a Word caption.
 
 #### To add a figure caption
 
-Right-click the image and select “Insert Caption.” Note: it is not
+In Word, right-click the image and select “Insert Caption.” Note: it is not
 recommended to add the full text during this stage as it has a character
 limit. Rather, “insert caption” as “Figure #.” then continue to add the
 text once the caption is produced.
@@ -73,7 +74,7 @@ center-justified and the caption left-justified.
 
 #### To add alternative text
 
-Right click the image and select “Edit Alt Text.”
+In Word, right-click the image and select “Edit Alt Text.”
 
 ::: {custom-style="Emphasis 1"}
 Tell me more about alt text
