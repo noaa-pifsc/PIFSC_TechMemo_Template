@@ -1,7 +1,7 @@
 # Delete this page in Word {.unnumbered}
 Along with the page before it that the template generates.
 
-Before that, though, follow these instructions:  
+Before that, though, follow these instructions in Word:  
 - At the top of the Table of Contents, select Insert > Break > "Section Break
 (continuous)"   
 
@@ -40,7 +40,9 @@ Then, follow the instructions on the following pages:
 ```{r}
 #| echo: false
 
-TechMemoTitle <- c("Replace this green text with the title in sentence case")
+TechMemoTitle <- c("Replace this text with the title in sentence case")
+# R will insert your title where you see `r TechMemoTitle` and format it correctly
+
 
 # In the text blocks below:
 
@@ -88,14 +90,15 @@ Pacific Islands Fisheries Science Center
 
 ```{r}
 #| echo: false
-# This code chunk create some strings that will fill document front matter.
-CoverPhotoDesc <- c("Replace this green text with a brief description of the cover photo")
+# This code chunk creates some strings that will autofill the document front 
+# matter below.
+CoverPhotoDesc <- c("Replace this text with a brief description of the cover photo")
 
 CoverPhotographer <- c("Either note the cover photo photograper here or delete this entire line of code")
 # Note: if you delete the above line about the CoverPhotographer, you should also delete reference
 # to it in the cover photo credit a few lines down from here.
 
-TechMemoAuthors <- c("Replace this green text with the authors using the format of Doe J.S., Smith C.R.")
+TechMemoAuthors <- c("Replace this text with the authors using the format of Doe J.S., Smith C.R.")
 ```
 
 **Acknowledgements**  
@@ -103,12 +106,13 @@ TechMemoAuthors <- c("Replace this green text with the authors using the format 
 Acknowledgments here. For example, this template is possible in part through
 NMFS Open Science, an encouraging, supportive, and ambitious group of people
 working to remove barriers in our scientific workflows.  Thanks to Marylou 
-Staman sharing workflows, code, and resources that improved this template.  This 
-effort was further made possible by PIFSC's technical editor Revere Wood.  This 
-template makes generous use of existing open resources, which are recognized 
-throughout the template as they're used.  If any are pivotal to the creation of 
-your admin report, please recognize them appropriately.   
-
+Staman sharing workflows, code, and resources that improved this template and to 
+Kaylyn McCoy Vicente for asking helpful questions that made the template easier
+to use.  This effort was further made possible by PIFSC's technical editor 
+Revere Wood.  This template makes generous use of existing open resources, which
+are recognized throughout the template as they're used.  If any are pivotal to 
+the creation of your tech memo, please recognize them appropriately.     
+\
 Mention throughout this document to trade names or commercial companies is for 
 identification purposes only and does not imply endorsement by the National 
 Marine Fisheries Service, NOAA.  
@@ -138,16 +142,42 @@ Honolulu, Hawaiʻi 96818
 {{< pagebreak >}}
 
 # Table of Contents
-**Delete this text.** To add the table of contents, add a line below the following paragraph, select Insert > Index and Tables… and select “Table of Contents”.  Unselect “Use hyperlinks instead of page numbers.”  Click “Okay”.  
+**In Word, follow these directions and then delete this text.** To add the table 
+of contents, add a line below the following paragraph, select Insert > Index and 
+Tables… and select “Table of Contents”.  Unselect “Use hyperlinks instead of 
+page numbers.”  Click “Okay”.  
 
-To auto-generate the table of contents, highlight the table of contents and click “Update Table” in the top-left corner. If you want Headings 3 visible in the ToC, or if you don’t want Headings 2 visible: go to References > Table of Contents > look at the bottom of the drop-down menu and click “Custom Table of Contents” > keep everything the same except increase or decrease “levels”; to show more headings: show three levels; to show less headings: show two levels > click “Yes” on the pop-up asking to replace TOC. Make sure the new TOC have the dotted lines.
+To auto-generate the table of contents, highlight the table of contents and 
+click “Update Table” in the top-left corner. If you want Headings 3 visible in 
+the ToC, or if you don’t want Headings 2 visible: go to References > Table of 
+Contents > look at the bottom of the drop-down menu and click “Custom Table of 
+Contents” > keep everything the same except increase or decrease “levels”; to 
+show more headings: show three levels; to show less headings: show two levels > 
+click “Yes” on the pop-up asking to replace TOC. Make sure the new TOC have the 
+dotted lines.
 
 # List of Tables
-**Delete this text.** To update the pre-inserted List of Tables (note: since there are no properly formatted figures present in the document, the list shows up as “No table of figures entries found”): highlight the table > go to References > Captions > click “Update Table” > click “update entire table”.  
+**In Word, follow these directions and then delete this text.** To update the 
+pre-inserted List of Tables (note: since there are no properly formatted figures 
+present in the document, the list shows up as “No table of figures entries 
+found”): highlight the table > go to References > Captions > click “Update 
+Table” > click “update entire table”.  
 
-If you need to auto-generate a new List of Tables: go to the References tab > Captions > insert Table of Figures > check “Caption Label” is set to “Figures” in the pop-up menu > press “OK”. Do this process after figures have been inserted into document. If your captions are not auto-generating, ensure you have followed proper steps for inserting captions found on pages b and c.
+If you need to auto-generate a new List of Tables: go to the References tab > 
+Captions > insert Table of Figures > check “Caption Label” is set to “Figures” 
+in the pop-up menu > press “OK”. Do this process after figures have been 
+inserted into document. If your captions are not auto-generating, ensure you 
+have followed proper steps for inserting captions found on pages b and c.
 
 # List of Figures
-**Delete this text.** To update the pre-inserted List of Figures (note: since there are no properly formatted figures present in the document, the list shows up as “No table of figures entries found”): highlight the table > go to References > Captions > click “Update Table” > click “update entire table”.  
+**In Word, follow these directions and then delete this text.** To update the 
+pre-inserted List of Figures (note: since there are no properly formatted 
+figures present in the document, the list shows up as “No table of figures 
+entries found”): highlight the table > go to References > Captions > click 
+“Update Table” > click “update entire table”.  
 
-If you need to auto-generate a new List of Figures: go to the References tab > Captions > insert Table of Figures > check “Caption Label” is set to “Figures” in the pop-up menu > press “OK”. Do this process after figures have been inserted into document. If your captions are not auto-generating, ensure you have followed proper steps for inserting captions found on pages b and c.
+If you need to auto-generate a new List of Figures: go to the References tab > 
+Captions > insert Table of Figures > check “Caption Label” is set to “Figures” 
+in the pop-up menu > press “OK”. Do this process after figures have been 
+inserted into document. If your captions are not auto-generating, ensure you 
+have followed proper steps for inserting captions found on pages b and c.
