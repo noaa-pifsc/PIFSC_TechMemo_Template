@@ -127,6 +127,81 @@ Edited by \[First name\]\[Last name\]
 
 `r TechMemoAuthors` (Year). `r TechMemoTitle`. Department of Commerce. NOAA Technical Memorandum. NMFS-PIFSC-##. doi:10…
 
+**Data Availability**
+```{r}
+#| echo: false
+# There's some suggested text below which you can modify to fit your situation.
+
+# Code: It's preferable to link a publicly accessible GitHub repository that is
+# devoted solely to this publication and allows people to replicate your work.
+# GitHub is NOAA and NMFS approved.  Learn more at https://nmfs-opensci.github.io/GitHub-Guide/
+
+# Data: There are a lot of permutations on how shareable data are.  Here are three
+# cases to help guide you.  If you're unsure about what to do with your data, 
+# ask for help from your supervisor, our PIFSC data officer (Jenny Suter), or a 
+# member of the PIFSC Open Science community.  There are resources available, 
+# but it can sometimes be hard to track them down.
+#
+# Confidential data: If you signed an NDA to access the data you used, then you
+# should have a good sense of whether it's confidential.  If it is, and you're
+# therefore not allowed to share it, here's text you can use for the data
+# availability statement.  Adjust it to reference your dataset in InPort.
+#    Fisheries data used in this paper are subject to confidentiality of 
+#    information requirements under the Magnuson–Stevens Fishery Conservation and 
+#    Management Act (Magnuson–Stevens Act or MSA) and are not available to the 
+#    public except in summary aggregate form. Information on requesting access to 
+#    these data can be found at https://inport.nmfs.noaa.gov/inport/item/2721 
+#    (logbook data) and https://inport.nmfs.noaa.gov/inport/item/5610 (dealer
+#    data).   
+#
+# Already-public data: If all of the data you used are already publicly available
+# and it's possible to recreate your results using your code, then all you need 
+# to do is point people to where you got the data.
+#    We thank NOAA Coral Reef Watch for providing the SST data  
+#    (https://coralreefwatch.noaa.gov/product/5km/index_5km_sst.php). We thank 
+#    NOAA National Centers for Environmental Information (NCEI) for providing 
+#    the surface wind data (https://www.ncei.noaa.gov/products/blended-sea-winds).
+# 
+# Original data: If your publication uses new or non-public, non-confidential 
+# data, you should provide information on how readers can access the data.  If 
+# you collected the data, you'll need to archive it and make it accessible. First, 
+# regardless of the data type, you should create and link to an 
+# InPort (https://www.fisheries.noaa.gov/inport/) record.  InPort provides public 
+# metadata (data about data).  It does not serve the actual data.  To do that,
+# there are many options that largely depend on the type of data:
+#    - Geolocated environmental data (e.g., CTD data) should be archived with
+#      NCEI.  There have options for stand-alone collections and ongoing 
+#      collections.  See their sites for more information: 
+#      One-time submission: https://www.ncei.noaa.gov/archive/send2ncei/
+#      Ongoing collection: https://www.ncei.noaa.gov/archive/atrac/index.html
+#    - Genomic data: https://www.ncbi.nlm.nih.gov/genbank/ If you're familiar
+#      with archiving genomic data, please open an issue or submit a pull request
+#      to contribute your expertise.
+#    - Coral reef data: https://www.coris.noaa.gov/ If you're familiar with 
+#      archiving coral reef data, please open an issue or submit a pull request
+#      to contribute your expertise.
+#    - Other data types: Zenodo is a NMFS-approved archival site that will accept
+#      pretty much any kind of data.  It will provide a citeable DOI for your 
+#      data which you can use as the URL in the data availability text below.  See
+#      their site for more information: https://zenodo.org/
+#      A Zenodo tutorial is also in the works for the ReadMe of this repo.  Keep
+#      an eye out for that.  
+#    - Know of a category/archive that should be included in this list?  Please
+#      open an issue or submit a pull request to have it added.  Thanks for 
+#      helping to make this template better!
+# 
+# Data available upon request: If you choose to include a statement to the effect
+# of, "Data available from the authors upon request," please consider including
+# an email address for the lead author and/or additional authors.  One thing to
+# consider with this approach is that if you leave NOAA, readers will be unable
+# to request the data from you.
+```
+The code used in this study is publicly available on GitHub at:
+<insert URL here>  
+ 
+The data used in this publication are publicly accessible and archived at: 
+<insert URL here>  
+
 **Copies of this report are available from**
 
 Pacific Islands Fisheries Science Center\
