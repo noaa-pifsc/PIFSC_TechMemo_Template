@@ -47,7 +47,9 @@ knitr::include_graphics("ExampleContent/IRCatDusk.jpg")
 ```
 
 These methods allow you reference your figures within the text, for
-example both @fig-IRC and @fig-IRC2 show the same thing.
+example both @fig-IRC and @fig-IRC2 show the same thing. You need to start your
+figure label with 'fig-' regardless of which method you use (in-line or with a
+chunk of R code).   
 
 Frustratingly, these methods do not retain your alt text (a known Quarto
 bug), allow Word to recognize your figure as a figure when building a
