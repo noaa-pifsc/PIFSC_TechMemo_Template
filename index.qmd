@@ -2,6 +2,9 @@
 Along with the page before it that the template generates.
 
 Before that, though, follow these instructions in Word:  
+
+- Add in captions for any figures and tables you have  
+
 - At the top of the Table of Contents, select Insert > Break > "Section Break
 (continuous)"   
 
@@ -13,11 +16,11 @@ thing: Insert > Break > "Section Break (continuous)"
 numerals.  
 
 - On an odd-numbered page, click in the footer area and insert the following 
-footer:  
+footer (font size 11):  
 \
 U.S. Department of Commerce | National Oceanic and Atmospheric Administration  
 \
-- On an even-numbered page, insert the following footer:  
+- On an even-numbered page, insert the following footer (font size 11):  
 \
 National Marine Fisheries Service | Pacific Islands Fisheries Science Center  
 \
