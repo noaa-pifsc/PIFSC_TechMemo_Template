@@ -6,7 +6,7 @@ Word document is rendered (no pdf or HTML documents).
 
 ## Getting started
 You can use this template to create your own repository for your tech memo. 
-To do this, click on the green button in the upper left that says "Use this
+To do this, click on the green button in the upper right that says "Use this
 template": ![](ExampleContent/UseThisTemplate.png)
 \
 Follow the steps to create a new repository with whatever name makes sense to 
