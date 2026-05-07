@@ -139,16 +139,15 @@ library(nmfspalette) # https://nmfs-fish-tools.github.io/nmfspalette/
 # the template could use instead, please open an issue in the repo and suggest it.
 
 # Load data
-co2gr <- read_csv("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_mlo.csv", 
-                  skip = 45,
-                  show_col_types = FALSE)
+co2gr <- read.csv("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_mlo.csv", 
+                  skip = 45)
 
 # Create expression to include a subscript in the y-axis label
 yLabel <- expression(CO[2] ~ Growth ~ Rate ~ (ppm))
 
 # Create the figure with a transparent background
 par(bg = NA)
-plot(co2gr$year, co2gr$`ann inc`, type = "l", col = nmfs_cols("processblue"),
+plot(co2gr$year, co2gr$ann.inc, type = "l", col = nmfs_cols("processblue"),
      xlab = c('Year'), ylab = yLabel, las = 1)
 
 ```
@@ -190,7 +189,7 @@ library(knitr)
 
 # Filtering data to just the most recent 10 years
 Final10years <- co2gr |>
-  select(year, `ann inc`) |>
+  select(year, ann.inc) |>
   filter(co2gr$year > 2013)
 
 # Make the table, including:
@@ -205,6 +204,12 @@ kable(Final10years,
 As @tbl-co2growth demonstrates, you'll need to do some of the formatting by hand
 in Word.  Frustratingly, some of the coded instructions (e.g., alignment) don't
 seem to be carrying through.  Suggestions for fixing this are welcome!
+
+Note that the above approach embeds the caption in the table.  You'll need to
+delete this entire line from the rendered table to allow the table to be 
+correctly formatted.  Just be sure to copy the caption into the Word table 
+caption first.  Eliminating the caption altogether breaks the table label 
+(sigh...).  
 
 #### Creating a table by hand
 
