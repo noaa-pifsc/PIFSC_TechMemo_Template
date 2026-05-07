@@ -144,6 +144,10 @@ Edited by \[First name\]\[Last name\]
 # ask for help from your supervisor, our PIFSC data officer (Jenny Suter), or a 
 # member of the PIFSC Open Science community.  There are resources available, 
 # but it can sometimes be hard to track them down.
+# 
+# You can find a list of NOAA-approved data repositories on the PIFSC Open Science
+# page, at the bottom under Resources.  
+# https://sites.google.com/noaa.gov/pifsc-intranet/open-science
 #
 # Confidential data: If you signed an NDA to access the data you used, then you
 # should have a good sense of whether it's confidential.  If it is, and you're
