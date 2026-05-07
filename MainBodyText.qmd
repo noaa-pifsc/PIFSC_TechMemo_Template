@@ -235,6 +235,12 @@ In the code that creates @tbl-GWP the colons (:) in the line under the header
 denote column alignment.  Although this seems not to be working...  Something to
 fix.
 
+Note that the above approach embeds the caption in the table.  You'll need to
+delete this entire line from the rendered table to allow the table to be 
+correctly formatted.  Just be sure to copy the caption into the Word table 
+caption first.  Eliminating the caption altogether breaks the table label 
+(sigh...).
+
 #### Landscape orientation for wide tables
 If you have a very wide table, you can use landscape orientation to display it 
 more cleanly.  Simply enclose your table in fences (:::) designating the page
